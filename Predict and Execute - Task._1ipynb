@@ -1,0 +1,2436 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "26c308f6-1b48-49bc-bc5b-b07a7381c232",
+   "metadata": {},
+   "source": [
+    "## Questions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5ca33239-5543-4fed-8361-6ef09e7894fd",
+   "metadata": {},
+   "source": [
+    "### Q.1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4c02e0dc-1fb4-4cfd-9eeb-b68ef8e857e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'dict'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = dict()\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cca8988e-4909-4eb8-b15b-78a69d2cbe8a",
+   "metadata": {},
+   "source": [
+    "#### Output: <class 'dict'>\n",
+    "#### Explanation: dict() creates an empty dictionary\n",
+    "#### The type() function tells us the type of x"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a845f84d-1feb-4ee4-a312-6c2e1c5e6c94",
+   "metadata": {},
+   "source": [
+    "------------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "86f346b8-d17d-404e-bc19-f2236b72ec8d",
+   "metadata": {},
+   "source": [
+    "### Q.2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "13a043f8-464f-4aa3-b757-04b9ea45349c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = set()\n",
+    "print(len(x))\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "49d129cd-6d87-4b77-8869-08dbb24b2153",
+   "metadata": {},
+   "source": [
+    "#### If we specify set() it will give us type as and set and we dose not add any paramter in it so length is 0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dfb9b8a6-2168-461b-9339-33b1b23b969e",
+   "metadata": {},
+   "source": [
+    "-------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc8b2409-1519-43c8-acaa-5b4845895016",
+   "metadata": {},
+   "source": [
+    "### Q.3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "d006d2cc-664b-4a38-979d-118d9f602165",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = {}\n",
+    "print(bool(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aed23397-b345-44f2-8a79-251921ad63a2",
+   "metadata": {},
+   "source": [
+    "#### Output: False\n",
+    "#### Explanation: x is an empty dictionary \n",
+    "#### Python considers an empty dictionary as False as any empty collection return false"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ebae2c74-b809-4429-8b05-ae0117582906",
+   "metadata": {},
+   "source": [
+    "-------------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f97a8529-3831-4f93-9d04-5854c6e39d84",
+   "metadata": {},
+   "source": [
+    "### Q.4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "dab05200-4cf3-4623-acf0-9de07265ae5d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{10}\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = set()\n",
+    "x.add(10)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3b96f04b-3203-4268-81cb-5430257ae0ea",
+   "metadata": {},
+   "source": [
+    "#### Output: {10}\n",
+    "#### Explanation: set() creates an empty set\n",
+    "#### The add() method adds 10 to the set\n",
+    "#### So the output is {10}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "216e8d0f-41f3-40d6-a724-2045e8ba7d99",
+   "metadata": {},
+   "source": [
+    "-----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "09cd1314-0ef5-4e0b-aea4-1b52290409b1",
+   "metadata": {},
+   "source": [
+    "### Q.5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "788f025b-e5ea-457a-a8fd-4abcd463ee78",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'dict' object has no attribute 'add'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[5], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m x \u001b[38;5;241m=\u001b[39m {}\n\u001b[1;32m----> 2\u001b[0m x\u001b[38;5;241m.\u001b[39madd(\u001b[38;5;241m10\u001b[39m)\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28mprint\u001b[39m(x)\n",
+      "\u001b[1;31mAttributeError\u001b[0m: 'dict' object has no attribute 'add'"
+     ]
+    }
+   ],
+   "source": [
+    "x = {}\n",
+    "x.add(10)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "72276800-3033-4936-a7e8-bc06ebcb0463",
+   "metadata": {},
+   "source": [
+    "#### Output: 'dict' object has no attribute 'add'\n",
+    "#### Explaination: {} empty curly braces creates an empty disctionary\n",
+    "#### And dictionary has no atrribute add"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "20acd91b-56a7-44cc-8c0e-692a7ffa0073",
+   "metadata": {},
+   "source": [
+    "-----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a56f9030-bc42-4888-b1a3-334fe9bdaac8",
+   "metadata": {},
+   "source": [
+    "### Q.6) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "9ee6e753-28a2-4638-b96c-ac344b9e6d54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = (25)\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "322cb496-85b6-45fe-903d-62159acd1cfe",
+   "metadata": {},
+   "source": [
+    "#### Output: 1\n",
+    "#### Explanation: The comma makes x a tuple with one element\n",
+    "#### The len() function counts the elements so the output is 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9c21e02-d05a-4d6c-9f29-ca2ccdc4c379",
+   "metadata": {},
+   "source": [
+    "-------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4fb6799f-e545-4361-8d53-35d9d01298c6",
+   "metadata": {},
+   "source": [
+    "### Q.7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "b7d7f279-dc97-46bb-bf88-f23cac0ddc9d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = (25,)\n",
+    "print(len(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d7c7f422-ff0b-47f8-90d5-22248e07a0dc",
+   "metadata": {},
+   "source": [
+    "#### Output: 1\n",
+    "#### Explanation: The comma makes x a tuple with one element\n",
+    "#### The len() function counts the elements so the output is 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "79973467-e08e-46f7-9c37-77f71bcf0241",
+   "metadata": {},
+   "source": [
+    "-----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a0e72cec-06ff-4001-88cf-4bc28c33bd60",
+   "metadata": {},
+   "source": [
+    "### Q.8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "6d354668-8e71-4fbc-8365-e0e7f8d69914",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = (25,)\n",
+    "print(x[0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b0933859-2f46-4960-914e-eeac2e6a83da",
+   "metadata": {},
+   "source": [
+    "#### Output: 25\n",
+    "#### Explanation: x is a tuple with one element 25\n",
+    "#### Index 0 represents the first element so it prints 25"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c45f3d8-21d3-424a-bcf0-adab04e3fae1",
+   "metadata": {},
+   "source": [
+    "--------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "99b83652-74dd-4c55-9549-2d7145b0fe54",
+   "metadata": {},
+   "source": [
+    "### Q.9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "9d8fc967-9bcf-4b00-b2e7-d5847f9fd5f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'tuple'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 25, 30\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9a16895-58db-4617-b638-402b9b64aa77",
+   "metadata": {},
+   "source": [
+    "#### Output: <class 'tuple'>\n",
+    "#### Explanation: The comma creates a tuple in Python\n",
+    "#### So x contains two elements 25 and 30"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "82e79470-23b8-4739-8510-126eb0577d68",
+   "metadata": {},
+   "source": [
+    "------------------------\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "da53cb07-1413-4ae3-9216-67b04e573bff",
+   "metadata": {},
+   "source": [
+    "### Q.10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "0861c476-aa77-4e01-b387-2c86acf10060",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "35\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = (25, 30, 35)\n",
+    "print(x[-1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c73f122b-4e4c-4cd3-860d-c2a4c3e25d94",
+   "metadata": {},
+   "source": [
+    "#### Output: 35\n",
+    "#### Explanation: Negative indexing starts from the last element\n",
+    "#### Index -1 gives the last element which is 35"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "92544451-98b9-4eb7-a55a-415cc90eecf1",
+   "metadata": {},
+   "source": [
+    "---------------------\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b15f5789-6b15-426c-8578-e1571cdff36b",
+   "metadata": {},
+   "source": [
+    "### Q.11)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "2a53ead8-e4e4-434e-848e-321e2ecdb9c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool(0))\n",
+    "print(bool(10))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fd7c2e4e-b218-4934-b3db-11b34755fce8",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "-  False\n",
+    "-  True\n",
+    "#### Explanation: In Python 0 is considered False\n",
+    "#### Any non-zero number is considered True\n",
+    "#### So bool(0) returns False and bool(10) returns True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "524ac9e5-330c-4e56-bb17-4cb9c14b2c5d",
+   "metadata": {},
+   "source": [
+    "--------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3121f713-2c48-4114-83ef-b96d6866decb",
+   "metadata": {},
+   "source": [
+    "### Q.12)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "71fc8b7e-04eb-4fb7-9d4c-764bf3d910d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool(\"\"))\n",
+    "print(bool(\" \"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c13893a2-3b6d-4b75-9e8f-d6e2188cc404",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- False\n",
+    "- True\n",
+    "#### Explanation: An empty string has no characters so it returns False\n",
+    "#### The second string has a space so it is not empty and returns True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9780c8e-1213-472e-b3a4-705a7b4064bd",
+   "metadata": {},
+   "source": [
+    "---------------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "80184560-9ad9-4c27-ad42-fe459db518c8",
+   "metadata": {},
+   "source": [
+    "### Q.13)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "26518eaa-907a-4102-98ab-c3c98963a93f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool([]))\n",
+    "print(bool([] + [1]))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "81cf8969-50a4-4d23-aad7-8a2da1158ab7",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- False\n",
+    "- True\n",
+    "#### Explanation: The first list is empty so it returns False\n",
+    "#### The second list contains 1 after adding the lists\n",
+    "#### So a non empty list returns True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fae2963e-6181-4389-b5e9-cad0258fe69a",
+   "metadata": {},
+   "source": [
+    "-----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f634ca3f-e885-46aa-a7e0-d37419e52681",
+   "metadata": {},
+   "source": [
+    "### Q.14)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "856c8ccb-750f-48f4-b07b-c1f518952d80",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool(()))\n",
+    "print(bool((1,)))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4b62b5e9-1d5b-4ebf-95bb-bdc6b4f7687d",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- False\n",
+    "- True\n",
+    "#### Explanation: The first tuple is empty so it returns False\n",
+    "#### The second tuple contains one element 1 so it returns True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "de1422ca-192b-4863-a74a-e47c1751377a",
+   "metadata": {},
+   "source": [
+    "--------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "41e80aa7-0b9a-4754-b4c9-b06b28a54bbb",
+   "metadata": {},
+   "source": [
+    "### Q.15)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "49774900-4889-4f77-90b9-d5996ae96565",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool(None))\n",
+    "print(bool(\"None\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "899a2bf7-25eb-4de1-ac8d-f23627b056b1",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- False\n",
+    "- True\n",
+    "#### Explanation: None represents no value so it returns False\n",
+    "#### \"None\" is a string containing characters so it returns True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9fe6bb55-70e8-4ecc-abc7-eb128c256859",
+   "metadata": {},
+   "source": [
+    "---------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d3597084-2bff-4ccb-96db-fcd6640a0b3e",
+   "metadata": {},
+   "source": [
+    "### Q.16)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "99aab638-57af-44bd-8452-a8980b23801c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "{True: 'B'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "d = {True: \"A\", 1: \"B\"}\n",
+    "print(len(d))\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "13a38571-62d6-4959-9dc2-261cad353dc0",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- 1\n",
+    "- {True: 'B'}\n",
+    "#### Explanation: True and 1 are equal in Python so they are treated\n",
+    "#### as the same dictionary key\n",
+    "#### The value \"B\" replaces the value \"A\" so the dictionary has one key"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "18a73063-760a-4d82-963d-7f44552a1678",
+   "metadata": {},
+   "source": [
+    "-------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "674d62c1-13ea-4aa3-ab46-c2e63e1f9dce",
+   "metadata": {},
+   "source": [
+    "### Q.17)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "5c147589-6adf-4521-873d-c5d8b5e71480",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "B\n"
+     ]
+    }
+   ],
+   "source": [
+    "d = {1: \"A\", True: \"B\"}\n",
+    "print(d[True])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "710d8848-6ba4-4c66-9a75-32aa890ab3d6",
+   "metadata": {},
+   "source": [
+    "#### Output: B\n",
+    "#### Explanation: In Python True and 1 are treated as the same key\n",
+    "#### The value \"B\" replaces the value \"A\"\n",
+    "#### So d[True] prints B"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3f39ebf5-5e2d-4193-89ba-c7f021973913",
+   "metadata": {},
+   "source": [
+    "--------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5794c42c-3862-4ac6-881d-4607a18cad49",
+   "metadata": {},
+   "source": [
+    "### Q.18)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "fc059fba-0755-4ad7-abdb-90d3d33c8071",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1.0: 'B'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "d = {1.0: \"A\", True: \"B\"}\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "84f18aa6-57c0-4b08-9d0b-2351dc93fe5f",
+   "metadata": {},
+   "source": [
+    "#### Output: {1.0: 'B'}\n",
+    "#### Explanation: In Python 1.0 and True are equal and have the same hash\n",
+    "#### So Python treats them as the same dictionary key\n",
+    "#### The value 'B' replaces the value 'A'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c418dc3-d203-47c0-ba3a-8da8ca87d3b8",
+   "metadata": {},
+   "source": [
+    "----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "39c2996e-f7ca-4584-8211-41bd1782b33b",
+   "metadata": {},
+   "source": [
+    "### Q.19)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "ce07cb29-cb73-4ab0-933c-641fcd2c5cc7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "B\n"
+     ]
+    }
+   ],
+   "source": [
+    "d = {False: \"A\", 0: \"B\"}\n",
+    "print(d[0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "05ef7ab2-10e1-4d99-989f-31e0cd2d6f39",
+   "metadata": {},
+   "source": [
+    "#### Output: B\n",
+    "#### Explanation: In Python False and 0 are treated as the same key\n",
+    "#### The value \"B\" replaces the value \"A\"\n",
+    "#### So d[0] prints B"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8c1d5f67-221c-4a60-b706-aa55733f174c",
+   "metadata": {},
+   "source": [
+    "----------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a9b73cab-4e70-446e-9fec-46033874b381",
+   "metadata": {},
+   "source": [
+    "### Q.20)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "c8606b39-8e66-43db-a3e6-7dc509f1459e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20]\n",
+    "b = [10, 20]\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ac8a4d1f-4d07-4b73-b430-06e9b6339b2b",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- True\n",
+    "- False\n",
+    "#### Explanation: Both lists have the same values so a == b is True\n",
+    "#### But both lists are different location in memory so a is b is False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7b2e4911-ed1f-4ee5-94b8-e3b4acff09a2",
+   "metadata": {},
+   "source": [
+    "-------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4009af39-fc2f-4011-b8f6-66f2956c8f33",
+   "metadata": {},
+   "source": [
+    "### Q.21)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "4450f962-1eca-448a-8c2b-56f50a109e2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20]\n",
+    "b = a\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "823768ff-43dc-430d-b3ea-0bb4e3a06d3b",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- True\n",
+    "- True\n",
+    "#### Explanation: b = a means both variables refer to the same list\n",
+    "#### Their values are equal, and both refer to the same location in memory\n",
+    "#### So, both == and is return True"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e11690ea-8128-4587-b6e2-fcfc29fbc4c5",
+   "metadata": {},
+   "source": [
+    "--------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "57e71db8-0a07-4d43-bce0-ea030c6f52cb",
+   "metadata": {},
+   "source": [
+    "### Q.22)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "70c2eb58-75be-4b96-8e73-05125d086db9",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"hello\"\n",
+    "b = \"\".join([\"he\", \"llo\"])\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "eae7ccd9-7f24-42fc-a703-1d6883a15fbd",
+   "metadata": {},
+   "source": [
+    "--------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "14bd48c7-dc15-4714-9c03-e209a126b65d",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- True\n",
+    "- False\n",
+    "#### Explanation: Both strings have the same value so == returns True\n",
+    "#### But they are different locations in memory so is returns False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a2c8c31a-61c5-476f-b728-a06b71c899de",
+   "metadata": {},
+   "source": [
+    "-------------------\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d0769802-83c2-45ee-aefe-f35c1ace4817",
+   "metadata": {},
+   "source": [
+    "### Q.23)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "3b76542a-000c-4206-a9bf-6f888a705217",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1]\n",
+    "b = a[:]\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "67d1ac15-322b-4132-be2f-af485f01282e",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- True\n",
+    "- False\n",
+    "#### Explanation: a[:] creates a new list with the same elements\n",
+    "#### So both lists have the same values but they are different memory locations\n",
+    "#### Therefore == returns True and is returns False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d74d6a7e-fffe-417d-a9ff-ef6f5d2de5bc",
+   "metadata": {},
+   "source": [
+    "-----------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "30397fac-be90-4ba9-b262-74f6732ed975",
+   "metadata": {},
+   "source": [
+    "### Q.24)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "1f14aa44-d5fb-4fad-a4f8-acf8987e02f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(\"500\")\n",
+    "b = int(\"500\")\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c08b3b54-b6f8-41cc-b1b2-f8b64acee3b0",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- True\n",
+    "- False\n",
+    "#### Explanation: Both variables have the same value 500\n",
+    "#### But Python creates separate integer objects for these values\n",
+    "#### So == returns True and is returns False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "28ff2bf8-affe-4cb4-8712-174827f5a42b",
+   "metadata": {},
+   "source": [
+    "------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5fdf0e16-7f25-445b-9872-4452fd28b7b2",
+   "metadata": {},
+   "source": [
+    "### Q.25)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "9c28205b-f33e-4fba-827c-c6129782f295",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20]\n",
+    "b = a\n",
+    "b.append(30)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ef328ada-ab2c-414e-a6d2-bcbfac9c21a8",
+   "metadata": {},
+   "source": [
+    "#### Output: [10, 20, 30]\n",
+    "#### Explanation: b and a refer to the same list\n",
+    "#### When we add 30 using b the original list also changes\n",
+    "#### So a prints [10, 20, 30]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f7e903f7-aa39-4d69-ba43-fb8e05348305",
+   "metadata": {},
+   "source": [
+    "---------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e641d662-7a9a-4a1f-ab92-282f70158e54",
+   "metadata": {},
+   "source": [
+    "### Q.26)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "a3f6b96b-ddcb-441f-8d3c-889114041772",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20]\n",
+    "b = a\n",
+    "a = a + [30]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "290a9cf2-a5d6-40c2-a6fa-e6410f4aa2c6",
+   "metadata": {},
+   "source": [
+    "#### Output: [10, 20]\n",
+    "#### Explanation: b refers to the original list\n",
+    "#### The + operator creates a new list and assigns it to a\n",
+    "#### So b  contains [10, 20]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aeb6c15b-2e05-4a51-953e-4fe9259e7deb",
+   "metadata": {},
+   "source": [
+    "----------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "029e22f8-6275-4d58-b710-43b4127191f1",
+   "metadata": {},
+   "source": [
+    "### Q.27)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "39097536-d079-42cc-a793-092038cb9d5b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20]\n",
+    "b = a\n",
+    "a += [30]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "12ad31f4-7b3c-4137-9b38-8d27050aad8a",
+   "metadata": {},
+   "source": [
+    "#### Output: [10, 20, 30]\n",
+    "#### Explanation: a and b refer to the same list\n",
+    "#### The += operator adds 30 to the existing list\n",
+    "#### So the change is also visible in b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c9b0c07b-fd40-4896-a188-12c808df04db",
+   "metadata": {},
+   "source": [
+    "-------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc1e6dd5-4c7e-46fb-a51c-7fbdbf75251c",
+   "metadata": {},
+   "source": [
+    "### Q.28)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "c3837857-6a7c-4f30-a17c-2074cb968d6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20, 30, 40]\n",
+    "b = a[1:3]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fa131b4f-cc43-4cc8-8aca-192b46c7c5ab",
+   "metadata": {},
+   "source": [
+    "#### Output: [20, 30]\n",
+    "#### Explanation: Slicing starts from index 1 and stops before index 3\n",
+    "#### So the elements at index 1 and 2 are included\n",
+    "#### Therefore b returns [20, 30]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6734fcc2-9915-42ce-beda-b50dfe97bd00",
+   "metadata": {},
+   "source": [
+    "-----------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c95b559-d142-450e-9e44-657a21a5988b",
+   "metadata": {},
+   "source": [
+    "### Q.29)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "b6e34a2b-d64f-4f2e-b3b9-3acf09384c3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20, 30, 40]\n",
+    "b = a[::2]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "32ede42e-1a18-4f53-9354-2f5144d24e5e",
+   "metadata": {},
+   "source": [
+    "#### Output: [10, 30]\n",
+    "#### Explanation: The step value is 2 so Python takes every second element\n",
+    "#### It starts from index 0 and selects 10 and 30\n",
+    "#### So the output is [10, 30]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b7c57165-f3af-46c4-90ac-64394dbf32ee",
+   "metadata": {},
+   "source": [
+    "------------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "820fca85-b512-4537-8222-30423c6a2f38",
+   "metadata": {},
+   "source": [
+    "### Q.30)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "dbcdb918-1f1d-405c-b50f-7a558280a661",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30]\n",
+      "[99, 20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10, 20, 30]\n",
+    "b = a[:]\n",
+    "b[0] = 99\n",
+    "print(a)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9ae299b2-78dc-4dcb-8e19-13bfe478393b",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- [10, 20, 30]\n",
+    "- [99, 20, 30]\n",
+    "#### Explanation: a[:] creates a new list with the same elements\n",
+    "#### Changing the first element of b does not change a\n",
+    "#### So both lists have different values"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d9cb841e-54f0-4fa4-900f-2ee7eb8d2cf2",
+   "metadata": {},
+   "source": [
+    "---------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "42910c8d-7bf5-4a53-8848-4fa451c4e93b",
+   "metadata": {},
+   "source": [
+    "### Q.31)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "d0ced371-17b8-4878-b40e-eecc902f07be",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "b = a\n",
+    "del a\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1e3cd76f-0f2d-4a17-8683-cd8eff3a1f9a",
+   "metadata": {},
+   "source": [
+    "#### Output: [1, 2, 3]\n",
+    "#### Explanation: del a removes the name a not the list\n",
+    "#### b still refers to the list so it prints the values"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "177aa3fc-c16b-47fe-86f1-355a982a8d2f",
+   "metadata": {},
+   "source": [
+    "-----------------------\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "73d75b53-3a07-448a-bae3-3d75610ec147",
+   "metadata": {},
+   "source": [
+    "### Q.32)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "bd73ce55-a0f2-4aed-9e58-2461584d8819",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "b = a\n",
+    "del a[0]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "47d8fcc8-ee13-4ff5-95c1-f71ee8d364a6",
+   "metadata": {},
+   "source": [
+    "#### Output: [2, 3]\n",
+    "#### Explanation: del a[0] removes the first element\n",
+    "#### Both a and b refer to the same list so b also changes"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cbb414f7-48be-4a27-83d2-67271a929a57",
+   "metadata": {},
+   "source": [
+    "----------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "558a2b4d-ca8d-41f3-a889-8f691731f23b",
+   "metadata": {},
+   "source": [
+    "### Q.33)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "4d22caa2-8bd8-4ae2-bc4d-ee505bdd0a38",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "b = a\n",
+    "del a[:]\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "00eed173-66d2-460e-9467-6b22a6c16ca3",
+   "metadata": {},
+   "source": [
+    "#### Output: []\n",
+    "#### Explanation: del a[:] removes all elements from the list\n",
+    "#### Both a and b refer to the same list so b also becomes empty"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a551b643-b722-4550-bad7-852fe12a7756",
+   "metadata": {},
+   "source": [
+    "------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f55ecc15-67a1-4511-95fc-9a8ba2307e5b",
+   "metadata": {},
+   "source": [
+    "### Q.34)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "7aa49ad1-98a6-46b9-b4db-c210c94f87a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'a' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[35], line 3\u001b[0m\n\u001b[0;32m      1\u001b[0m a \u001b[38;5;241m=\u001b[39m [\u001b[38;5;241m1\u001b[39m, \u001b[38;5;241m2\u001b[39m, \u001b[38;5;241m3\u001b[39m]\n\u001b[0;32m      2\u001b[0m \u001b[38;5;28;01mdel\u001b[39;00m a\n\u001b[1;32m----> 3\u001b[0m \u001b[38;5;28mprint\u001b[39m(a)\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'a' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "del a\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6a463367-37e7-4248-ad80-4cb323259089",
+   "metadata": {},
+   "source": [
+    "#### Output: NameError\n",
+    "#### Explanation: del a removes the name a\n",
+    "#### So Python cannot find a when print(a) run"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6f33caef-0185-455f-a44d-538106b8fb42",
+   "metadata": {},
+   "source": [
+    "----------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7f70d3ae-ab91-4537-8103-5024af76c68d",
+   "metadata": {},
+   "source": [
+    "### Q.35)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "ede78822-c2e1-4f2b-9c5e-f27997990ae8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 99], [3, 4]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import copy\n",
+    "\n",
+    "a = [[1, 2], [3, 4]]\n",
+    "b = copy.copy(a)\n",
+    "b[0][1] = 99\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bf39ba7c-1e23-4769-bd54-13517ed6ee7d",
+   "metadata": {},
+   "source": [
+    "#### Output: [[1, 99], [3, 4]]\n",
+    "#### Explanation: The nested lists are shared by both a and b\n",
+    "#### So changing b also changes a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "623f6a10-97b0-47f3-8fb3-a81528d59cf1",
+   "metadata": {},
+   "source": [
+    "-------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6f2eb43a-8ee5-45e3-8ef1-cc29c2d5a577",
+   "metadata": {},
+   "source": [
+    "### Q.36)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "f033f23f-8500-48ff-b4c8-ef6b11b923ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2], [3, 4]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import copy\n",
+    "\n",
+    "a = [[1, 2], [3, 4]]\n",
+    "b = copy.deepcopy(a)\n",
+    "b[0][1] = 99\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "05423b31-3767-4811-a29b-cfc330d9e701",
+   "metadata": {},
+   "source": [
+    "#### Output: [[1, 2], [3, 4]]\n",
+    "#### Explanation: deepcopy() creates a separate copy\n",
+    "#### So changing b does not change a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3061dc94-86b9-4802-8cd3-1109a47c6a00",
+   "metadata": {},
+   "source": [
+    "----------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c3d0a62-24f1-43b3-becd-fa528d332b29",
+   "metadata": {},
+   "source": [
+    "### Q.37)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "8756edff-64b2-462e-9d9a-aeff669d5eec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[10], [20, 30]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import copy\n",
+    "\n",
+    "a = [[10], [20]]\n",
+    "b = a.copy()\n",
+    "a[1].append(30)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3e18a100-d563-4eb2-af79-b5e9b9f9b2a8",
+   "metadata": {},
+   "source": [
+    "#### Output: [[10], [20, 30]]\n",
+    "#### Explanation: copy() copies only the outer list\n",
+    "#### Both lists share the inner lists so b also changes"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1e341aa8-697c-45c7-80cc-59c5fe66e8fa",
+   "metadata": {},
+   "source": [
+    "----------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "049e08a5-7a78-4739-a265-8b4d45cf5cfe",
+   "metadata": {},
+   "source": [
+    "### Q.38)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "39347e8a-3d4f-42fb-86aa-109291706108",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[10], [20]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import copy\n",
+    "\n",
+    "a = [[10], [20]]\n",
+    "b = copy.deepcopy(a)\n",
+    "a[1].append(30)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c71895a0-241a-411d-9e91-54406b80511b",
+   "metadata": {},
+   "source": [
+    "#### Output: [[10], [20]]\n",
+    "#### Explanation: deepcopy() creates a separate copy of all elements\n",
+    "#### So changes in a do not affect b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dddd68c4-c2c3-4a4b-87d5-f1584feddeb7",
+   "metadata": {},
+   "source": [
+    "\n",
+    "-----------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "df46dbe4-45bb-422a-bdad-94bed2e82fdf",
+   "metadata": {},
+   "source": [
+    "### Q.39)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "9f04e8bc-d570-4dfd-b2e9-52d3e6dffe09",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "import copy\n",
+    "\n",
+    "a = [[1, 2], [3, 4]]\n",
+    "b = copy.copy(a)\n",
+    "print(a is b)\n",
+    "print(a[0] is b[0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7e60f530-eff2-4873-9044-675151ac47d7",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- False\n",
+    "- True\n",
+    "#### Explanation: copy() creates a new outer list\n",
+    "#### But both lists share the same nested list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "45ddb954-5461-4b9e-b46b-29bd70b619c2",
+   "metadata": {},
+   "source": [
+    "---"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cdfc689e-81ce-42ba-acdb-99ea7782a692",
+   "metadata": {},
+   "source": [
+    "### Q.40)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "066acb25-33a2-435d-ba59-820a091f1f01",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[5], [5], [5]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [[]] * 3\n",
+    "a[1].append(5)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a5c4b021-ec5a-4bcc-bc2e-16e38108b993",
+   "metadata": {},
+   "source": [
+    "#### Output: [[5], [5], [5]]\n",
+    "#### Explanation: All three elements refer to the same list\n",
+    "#### So adding 5 changes all three elements"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "60ccb9bf-8d75-4351-a92d-1291c975da7f",
+   "metadata": {},
+   "source": [
+    "-----------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c80a6a12-ee6e-41e7-886a-fad916ef2ac9",
+   "metadata": {},
+   "source": [
+    "### Q.41)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "f8e03cd2-902d-4f12-acf1-9daa6689b9c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[10, 20], [10, 20], [10, 20]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [[]] * 3\n",
+    "a[2].append(10)\n",
+    "a[0].append(20)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cb7bff17-406b-4a6e-a792-14da4504da92",
+   "metadata": {},
+   "source": [
+    "#### Output: [[10, 20], [10, 20], [10, 20]]\n",
+    "#### Explanation: All three elements share the same list\n",
+    "#### So adding 10 and 20 changes all three elements"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0323a1c3-1dde-4880-8a2d-45c9a6cba025",
+   "metadata": {},
+   "source": [
+    "---------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "493ee54a-db94-4b10-8cad-632f17de1838",
+   "metadata": {},
+   "source": [
+    "### Q.42)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "ad213c19-c470-45c0-a491-5b0b2c1d9ac7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1, 2], [1, 2], [1, 2]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [[1]] * 3\n",
+    "a[1].append(2)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6b054a4d-18e8-41af-8a52-5f12592e4bf5",
+   "metadata": {},
+   "source": [
+    "#### Output: [[1, 2], [1, 2], [1, 2]]\n",
+    "#### Explanation: All three elements share the same list\n",
+    "#### So adding 2 changes all three elements"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a7a00a54-cee1-42af-8e1e-b221cc8efc7e",
+   "metadata": {},
+   "source": [
+    "-----"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aef151f7-05c0-4b2a-9f9c-3325282795d5",
+   "metadata": {},
+   "source": [
+    "### Q.43)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "99a6890a-621c-4b97-aefa-3ce933db156b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [[]] * 4\n",
+    "print(a[0] is a[3])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2ca6e304-07bf-4a73-8f3e-618b32e9b402",
+   "metadata": {},
+   "source": [
+    "#### Output: True\n",
+    "#### Explanation: All elements refer to the same list\n",
+    "#### So a[0] and a[3] are the same object"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5c44f427-497b-4f51-a755-8fc053ba7375",
+   "metadata": {},
+   "source": [
+    "------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "264e7041-8f2e-4837-9eeb-ec363931d5c3",
+   "metadata": {},
+   "source": [
+    "### Q.44)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "902d1b6d-966f-4824-a5cb-7a6a8f2d87eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2)\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test(*args):\n",
+    "    print(args)\n",
+    "\n",
+    "test(1, 2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "74de0ead-7f56-45d3-9264-00c82a1e42df",
+   "metadata": {},
+   "source": [
+    "#### Output: (1, 2)\n",
+    "#### Explanation: *args collects all values into a tuple\n",
+    "#### So the output is (1, 2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "adb5f94f-34a5-4b85-b93c-2510ff50a608",
+   "metadata": {},
+   "source": [
+    "---------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "707fe094-0a07-47e6-8b7c-f3c12f1b566d",
+   "metadata": {},
+   "source": [
+    "### Q.45)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "f7944edc-3509-42ab-9067-f975a3095573",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'tuple'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test(*args):\n",
+    "    print(type(args))\n",
+    "\n",
+    "test(\"a\", \"b\", \"c\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "460bd0a1-3221-439d-84a5-c41a24bd19d7",
+   "metadata": {},
+   "source": [
+    "#### Output: <class 'tuple'>\n",
+    "#### Explanation: *args stores all values in a tuple\n",
+    "#### So the type of args is tuple"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dff7bbc2-8625-405b-900f-50eee2aa4fa0",
+   "metadata": {},
+   "source": [
+    "--------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "edc25b06-f912-42cc-856c-42d251a6b11f",
+   "metadata": {},
+   "source": [
+    "### Q.46)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "7160699a-bf42-4db7-a947-ea5e5dee9608",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'Ram', 'age': 25}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test(**kwargs):\n",
+    "    print(kwargs)\n",
+    "\n",
+    "test(name=\"Ram\", age=25)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8753c363-8d9a-44c7-a516-ce932d514d86",
+   "metadata": {},
+   "source": [
+    "#### Output: {'name': 'Ram', 'age': 25}\n",
+    "#### Explanation: **kwargs stores named values in a dictionary\n",
+    "#### So the output contains name and age with their values"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a5a579c3-22d7-4483-a6f5-6405dff4fcfb",
+   "metadata": {},
+   "source": [
+    "------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "113f784c-8e7f-4c96-9823-e4bc9e065747",
+   "metadata": {},
+   "source": [
+    "### Q.47)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "20b57bcd-99a4-47d9-84f0-1dd57ce03289",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'dict'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test(**kwargs):\n",
+    "    print(type(kwargs))\n",
+    "\n",
+    "test(a=10, b=20)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8110a5a7-0b76-4af7-96ac-6c9ac6700774",
+   "metadata": {},
+   "source": [
+    "#### Output: <class 'dict'>\n",
+    "#### Explanation: **kwargs stores named values in a dictionary\n",
+    "#### So the type of kwargs is dict"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9207fca7-357b-428d-aa6d-fd4cd2438d95",
+   "metadata": {},
+   "source": [
+    "-----------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fe439564-a415-4ad4-b610-7e90d03bfd71",
+   "metadata": {},
+   "source": [
+    "### Q.48)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "28eb32fe-1027-4e6c-97e3-a6e709cc93c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test():\n",
+    "    print(10)\n",
+    "\n",
+    "x = test()\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c98e0f7e-2d49-4358-a273-53f8f8440a2e",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- 10\n",
+    "- None\n",
+    "#### Explanation: print(10) displays 10\n",
+    "#### The function does not return any value so x retuns None"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e62cc8f1-b592-4b53-b8e9-ba75703f1482",
+   "metadata": {},
+   "source": [
+    "--------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5cb0fe1f-3808-4936-a116-039040851ec9",
+   "metadata": {},
+   "source": [
+    "### Q.49)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "9e74b368-391f-4611-92e4-0a1339f0daa6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test():\n",
+    "    return 10\n",
+    "\n",
+    "x = test()\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dc9e4a68-dab5-49ae-9869-847d37e7fafb",
+   "metadata": {},
+   "source": [
+    "#### Output: 10\n",
+    "#### Explanation: The function returns 10\n",
+    "#### So x stores 10 and print displays it"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ce06a0b9-d8b0-4b79-af82-dabe1ed1d467",
+   "metadata": {},
+   "source": [
+    "------------"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5e617ef9-7653-4215-998d-3066dbb3fe65",
+   "metadata": {},
+   "source": [
+    "### Q.50)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "ec9fd281-8cb9-4e83-b1ae-328b20e1a32b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Python\n",
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "def test():\n",
+    "    print(\"Python\")\n",
+    "    return 100\n",
+    "\n",
+    "x = test()\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d32916d-b875-4b6d-9edd-46db8a81c4f2",
+   "metadata": {},
+   "source": [
+    "#### Output:\n",
+    "- Python\n",
+    "- 100\n",
+    "#### Explanation: print displays Python first\n",
+    "#### return sends 100 to x which is printed after"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "47da75db-6be4-4c44-8a5e-4c7051bb6a29",
+   "metadata": {},
+   "source": [
+    "-------------------"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
